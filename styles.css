@@ -1,0 +1,40 @@
+/* Custom Stylesheet from Scratch */
+body {
+    background-color: #faf9f6; /* Custom background color */
+    font-family: 'Verdana', sans-serif; /* Custom font family */
+    color: #2c3e50; /* Custom font color */
+    margin: 0;
+}
+
+.main-container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+.header-box {
+    background-color: #D4AF37;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.content-section {
+    background-color: white;
+    padding: 30px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+}
+
+.graph-div {
+    margin-top: 30px;
+    padding: 20px;
+    border: 2px dashed #D4AF37;
+}
+
+.scratch-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
