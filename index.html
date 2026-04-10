@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Bird Jewelry | Permanent Jewelry</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --gold: #D4AF37; --white: #ffffff; --cream: #fffdf5; }
+        body { font-family: 'Georgia', serif; color: #333; overflow-x: hidden; }
+        
+        /* Hero Section with local image */
+        .hero-section { 
+            padding: 160px 0; 
+            background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), 
+                        url('gold-chain.jpg'); 
+            background-size: cover; 
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .navbar { border-bottom: 3px solid var(--gold); }
+        .navbar-brand { color: var(--gold) !important; font-weight: bold; letter-spacing: 2px; }
+        .btn-gold { background-color: var(--gold); color: white; border-radius: 50px; border: none; transition: 0.3s; }
+        .btn-gold:hover { background-color: #b8952e; color: white; transform: scale(1.05); }
+        
+        .resume-card { border: none; border-top: 8px solid var(--gold); border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .skill-badge { background: var(--cream); border: 1px solid var(--gold); padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; margin: 3px; display: inline-block; }
+        
+        h2::after { content: " ✨"; color: var(--gold); }
+        footer a { color: var(--gold); text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#"><i class="fas fa-dove me-2"></i>LITTLE BIRD JEWELRY</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">The Magic</a></li>
+                <li class="nav-item"><a class="nav-link" href="#resume">Résumé</a></li>
+                <li class="nav-item"><a class="nav-link btn btn-gold ms-lg-3 px-4" href="#book-section">Book Now</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="hero-section text-center">
+    <div class="container">
+        <h1 class="display-1 fw-bold">Little Bird Jewelry</h1>
+        <p class="lead fs-3">Bringing the magic to you with memories that last forever.</p>
+    </div>
+</header>
+
+<section id="about" class="py-5 bg-white text-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h2 class="mb-4">Our Experience</h2>
+                <p>We specialize in custom permanent jewelry at events to make memories that last forever. From bridal showers to private parties, we bring our mobile welding studio to provide a seamless, clasp-free experience with premium 14k gold and sterling silver.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="resume" class="py-5" style="background-color: var(--cream);">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10 bg-white p-5 resume-card">
+                <div class="row">
+                    <div class="col-md-4 border-end text-center text-md-start">
+                        <h4 class="text-gold">Sydney VanSteenkiste</h4>
+                        <p class="text-muted small">sydney.vansteenkiste@gmail.com</p>
+                        <hr>
+                        <h6>Education</h6>
+                        <p class="small"><strong>BYU - Provo</strong><br>Pre-business | Expected 2028<br>GPA: 3.98</p>
+                        <h6>Skills</h6>
+                        <div class="d-flex flex-wrap justify-content-center justify-content-md-start">
+                            <span class="skill-badge">Leadership</span>
+                            <span class="skill-badge">Micro-Welding</span>
+                            <span class="skill-badge">Customer Service</span>
+                            <span class="skill-badge">Organization</span>
+                        </div>
+                    </div>
+                    <div class="col-md-8 ps-md-5">
+                        <h5 class="fw-bold mb-4">Professional Experience</h5>
+                        <div class="mb-4">
+                            <h6 class="fw-bold text-dark">Certified Permanent Jewelry Technician <span class="float-end badge bg-warning text-dark">2026</span></h6>
+                            <p class="small">Certified in safety, metallurgy, and artisan welding techniques.</p>
+                        </div>
+                        <div class="mb-3">
+                            <h6>BYU Football Department <span class="float-end text-muted small">2024–2026</span></h6>
+                            <ul class="small">
+                                <li>Manager of daily office operations and document coordination.</li>
+                            </ul>
+                        </div>
+                        <div class="mb-3">
+                            <h6>Kelly Canyon Ski Resort <span class="float-end text-muted small">2022–2023</span></h6>
+                            <ul class="small">
+                                <li>Resolved guest issues in a high-intensity environment.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="book-section" class="py-5 bg-white">
+    <div class="container text-center">
+        <h2 class="mb-5">Request an Event Booking</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form class="text-start shadow p-4 rounded">
+                    <div class="mb-3"><label class="form-label">Event Date</label><input type="date" class="form-control"></div>
+                    <div class="mb-3"><label class="form-label">Email</label><input type="email" class="form-control" placeholder="your@email.com"></div>
+                    <button type="submit" class="btn btn-gold w-100 py-2">Check Availability</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="py-5 border-top text-center bg-light">
+    <p class="mb-0">&copy; 2026 Little Bird Jewelry | <a href="scratch.html">Student Project Page</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
